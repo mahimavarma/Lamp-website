@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero{
+    background:#000000 ;
+    min-height:100vh;
+    width: 100%;
+    color: aliceblue;
+    position: absolute;
+}
+nav img{
+    display: flex;
+    align-items: center;
+    padding: 20px 6px;
+    margin-right: 20px;
+}
+button{
+    background: #fdfdfd;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    margin-left: 100px;
+    transition: background 0.5s,margin-left 0.5s ;
+    
+    
+}
+button span{
+    display: block;
+    background: #53524e;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    flex: 1;
+    cursor: pointer;
+    
+}
+ .lamp-container{
+    position: absolute;
+    top:-1vh;
+    left: 50%;
+    width: 210px;
+}
+.lamp{
+    width: 99%;
+} 
+.light{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translateX(-52%);
+    width: 700px;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+.active{
+    background: #a00371;
+}
+.active span{
+    background: #fdfdfd;
+    margin-left:31px ;
+}
+
+.on{
+    opacity: 1;
+}
